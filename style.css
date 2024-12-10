@@ -79,7 +79,7 @@ nav ul li a:hover {
 /* Hero section */
 
 .container {
-    height: calc(100vh - 80px);
+    height: calc(100vh);
     display: flex;
     align-items: center;
     justify-content: space-between;
