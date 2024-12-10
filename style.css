@@ -1,0 +1,370 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(64, 63, 63);
+    color: whitesmoke;
+}
+
+
+/* utility classes */
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* navbar */
+
+nav {
+    background: black;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 80px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 18px;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orangered;
+    margin-right: auto;
+    transition: 0.4s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: orangered;
+}
+
+.fa-bars {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+/* Hero section */
+
+.container {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 4rem;
+}
+
+.container .box1 {
+    width: 50%;
+}
+
+.container .box1 h1 {
+    font-size: 42px;
+}
+
+.container .box1 p {
+    font-size: 18px;
+    color: #888;
+    padding-block: 20px;
+}
+
+.container .box1 a {
+    font-weight: 600;
+}
+
+.btn {
+    background: orangered;
+    padding: 12px 30px;
+    display: inline-block;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(107, 33, 6);
+}
+
+.container .box2 {
+    width: 50%;
+    /* background: blueviolet */
+}
+
+.container .box2 img {
+    max-width: 50%;
+    max-height: 100%;
+    margin-top: 20%;
+    margin-left: 100px;
+}
+
+
+/* menu-section */
+
+#menu-section {
+    padding: 100px 4rem;
+}
+
+#menu-section h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.menucontainer {
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menuitems {
+    width: 320px;
+    background: whitesmoke;
+    padding: 20px;
+}
+
+.menuitems img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.menuitems h4 {
+    padding-block: 15px;
+    color: black;
+}
+
+
+/* Trending Section */
+
+#Trend-Section {
+    padding: 100px 4rem;
+}
+
+#Trend-section h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.trend-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 0;
+    flex-wrap: wrap;
+}
+
+.trend-items {
+    width: 320px;
+    height: 320px;
+    background: whitesmoke;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.trend-items img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.trend-items img:hover {
+    transform: scale(1.1);
+}
+
+
+/* testimonial */
+
+#tesimonialsection {
+    padding: 100px 4rem;
+}
+
+#tesimonialsection h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.testimonial-container {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.testimonial {
+    width: 320px;
+    text-align: center;
+    color: black;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.testimonial img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+
+/* Blog section */
+
+#blogsection {
+    padding: 100px 4rem;
+}
+
+#blogsection h2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.blog-conatiner {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.blog {
+    padding: 15px;
+    width: 320px;
+    background: whitesmoke;
+}
+
+.blog img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.blog h4 {
+    color: black;
+    padding-block: 15px;
+    font-size: 18px;
+}
+
+
+/* footer section */
+
+footer {
+    padding: 40px 4rem;
+    background: black;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.col h3 {
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.col p {
+    font-size: 13px;
+}
+
+.col-1 {
+    width: 300px;
+}
+
+
+/* mediaQurey*/
+
+@media (max-width:800px) {
+    nav ul {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: black;
+        flex-direction: column;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li:last-child {
+        padding-bottom: 40px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .container .box1,
+    .container .box2 {
+        width: 100%;
+    }
+    #home,
+    #menu-section,
+    #trend-section,
+    #tesimonialsection,
+    #blogsection {
+        padding: 40px 2rem;
+    }
+    nav {
+        padding: 1rem 2rem;
+    }
+}
+
+
+/* footer responsive */
+
+@media (max-width:500px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+    }
+}
